@@ -20,8 +20,6 @@ AHouseMarque::AHouseMarque()
 void AHouseMarque::BeginPlay()
 {
 	Super::BeginPlay();	
-	//	Set the heightmap in the pmc
-	_pmc->SetHeightMap(_heightMap);
 }
 
 // Called every frame

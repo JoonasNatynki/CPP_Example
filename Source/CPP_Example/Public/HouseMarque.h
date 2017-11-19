@@ -26,9 +26,6 @@ public:
 	UPROPERTY(VisibleAnywhere)
 		//	The root sprite. So that we can tell where the actor actually is in the level (only visible in editor)
 		UBillboardComponent * _rootSprite;
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-		//	The heightmap of the pmc
-		UTexture2D * _heightMap;
 
 protected:
 	// Called when the game starts or when spawned

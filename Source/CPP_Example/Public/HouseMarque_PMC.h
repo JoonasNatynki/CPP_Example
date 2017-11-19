@@ -31,7 +31,7 @@ private:
 	//	Height of the heightmap texture
 	int _textureHeight;
 	//	How many vertices per side
-	int _quadsPerSectionSide = 200;
+	int _quadsPerSide = 200;
 	//	Quad size in world units
 	int quadSize = 10.0f;
 
@@ -42,8 +42,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-	//	Setter for heightmap
-	void SetHeightMap(UTexture2D * heightmap);
+	//	Creates the mesh from the heightmap
 	void CreateMeshSection();
+	//	Read color of pixel at texturecoordinate (x, y), return FColor
 	FColor GetPixelColorFromTexture(UTexture2D * texture, int x, int y);
 };
